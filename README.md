@@ -8,9 +8,9 @@ Beyond a single strategy, this page documents the **full landscape of remarkable
 
 ![Polymarket Arbitrage Bot Banner](doc/banner.png)
 
-**Live profile using this strategy:** [**@antsaslyku on Polymarket**](https://polymarket.com/@antsaslyku)
+**Live profiles using this strategy:** [**@polymarkettradingbot**](https://polymarket.com/@polymarkettradingbot) · [**@tradingbot-1**](https://polymarket.com/@tradingbot-1)
 
-**Telegram:** [@antsaslyku](https://t.me/antsaslyku) · **Author:** [@trum3it](https://github.com/trum3it)
+**Telegram:** [@trum3it](https://t.me/trum3it) · **Author:** [@trum3it](https://github.com/trum3it)
 
 ---
 
@@ -56,19 +56,21 @@ If you're interested in collaboration, have questions, or want to see the bot in
 
 | Channel | Link |
 |---------|------|
-| **Telegram** | [@antsaslyku](https://t.me/antsaslyku) |
+| **Telegram** | [@trum3it](https://t.me/trum3it) |
 | **GitHub** | [@trum3it](https://github.com/trum3it) |
-| **Polymarket** | [@antsaslyku](https://polymarket.com/@antsaslyku) |
+| **Polymarket** | [@polymarkettradingbot](https://polymarket.com/@polymarkettradingbot) · [@tradingbot-1](https://polymarket.com/@tradingbot-1) |
 
-This is my public Polymarket account — you can check the bot’s P/L live:
+These are public Polymarket accounts — you can check the bot’s P/L live:
 
-**https://polymarket.com/@antsaslyku**
+**https://polymarket.com/@polymarkettradingbot**
+
+**https://polymarket.com/@tradingbot-1**
 
 ---
 
 ## Live Proof — Buy → Redeem Cycles
 
-These are real on-chain transactions from [@antsaslyku](https://polymarket.com/@antsaslyku) on Polygon. Each pair shows the same pattern the **endcycle sniper** follows: **buy the favorite late in the window → redeem at $1.00 after resolution**.
+These are real on-chain transactions from live bot profiles on Polygon. Each pair shows the same pattern the **endcycle sniper** follows: **buy the favorite late in the window → redeem at $1.00 after resolution**.
 
 ![Polymarket Activity](doc/activity.png)
 
@@ -88,9 +90,9 @@ These are real on-chain transactions from [@antsaslyku](https://polymarket.com/@
 | **Buy** | 08:55:01 | Buy favorite @ **~$0.98–$0.99** near window end | [View buy tx](https://polygonscan.com/tx/0x7fa58be45dc24afbc8bd135fc6a7147fb548e2c00ad2f5b6100fa7510dd58b45) |
 | **Redeem** | 08:55:30 | Resolution redeem **~29s** after buy | [View redeem tx](https://polygonscan.com/tx/0x4edaaa3a6a6d854fe6ec938280ab3cfd34d07f34fcc75c7f4757feccfc9d30dc) |
 
-> **How to read these txs:** The **buy** tx interacts with `Polymarket: CTF Exchange V2` — USDC out, outcome shares in. The **redeem** tx settles winning shares back to USDC at **$1.00** per share when the 5m window resolves. Repeat this across many windows and P/L compounds — see the full history on [polymarket.com/@antsaslyku](https://polymarket.com/@antsaslyku).
+> **How to read these txs:** The **buy** tx interacts with `Polymarket: CTF Exchange V2` — USDC out, outcome shares in. The **redeem** tx settles winning shares back to USDC at **$1.00** per share when the 5m window resolves. Repeat this across many windows and P/L compounds — see the full history on [@polymarkettradingbot](https://polymarket.com/@polymarkettradingbot) and [@tradingbot-1](https://polymarket.com/@tradingbot-1).
 
-### Profile Screenshots ([@antsaslyku](https://polymarket.com/@antsaslyku))
+### Profile Screenshots ([@polymarkettradingbot](https://polymarket.com/@polymarkettradingbot) · [@tradingbot-1](https://polymarket.com/@tradingbot-1))
 
 Live Polymarket dashboard — portfolio growth and buy/redeem activity on **BTC** and **XRP** 5m markets at **96–99¢**:
 
@@ -131,7 +133,7 @@ That is why modern Polymarket systems are usually **multi-strategy**, not single
 
 It waits through most of the window, triggers buys when the favorite ask enters a configured band (e.g. **0.97–0.99**), manages risk with timed exits, and settles winning positions after resolution.
 
-This is the strategy behind the live [@antsaslyku](https://polymarket.com/@antsaslyku) activity shown above.
+This is the strategy behind the live [@polymarkettradingbot](https://polymarket.com/@polymarkettradingbot) / [@tradingbot-1](https://polymarket.com/@tradingbot-1) activity shown above.
 
 ### Strategy Overview
 
@@ -484,7 +486,7 @@ This project is built to help traders understand what a real **Polymarket arbitr
 - Buy → redeem settlement loops on Polygon
 - A clear map of the major bot strategies competing on Polymarket in 2026
 
-If you want to discuss strategy design, custom bots, or see live behavior, contact me on Telegram: [@antsaslyku](https://t.me/antsaslyku).
+If you want to discuss strategy design, custom bots, or see live behavior, contact me on Telegram: [@trum3it](https://t.me/trum3it).
 
 ---
 
@@ -493,7 +495,7 @@ If you want to discuss strategy design, custom bots, or see live behavior, conta
 - **Small edges, large tails** — a 1–2¢ theoretical edge can vanish after fees, slippage, and one bad flip
 - **Competition is intense** — many pure arb prints are taken by faster bots
 - **Not every window trades** — endcycle setups often skip cycles when no side reaches 0.97–0.99
-- **Past results are not future guarantees** — see [@antsaslyku](https://polymarket.com/@antsaslyku) as illustration, not a promise
+- **Past results are not future guarantees** — see [@polymarkettradingbot](https://polymarket.com/@polymarkettradingbot) / [@tradingbot-1](https://polymarket.com/@tradingbot-1) as illustration, not a promise
 - **Not financial advice** — trading prediction markets involves substantial risk of loss
 
 ---
