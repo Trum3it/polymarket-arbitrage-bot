@@ -1,18 +1,60 @@
-# Polymarket Arbitrage Bot
+# Polymarket Trading Bot | Polymarket Arbitrage Bot
 
-**Repository:** [github.com/trum3it/polymarket-arbitrage-bot](https://github.com/trum3it/polymarket-arbitrage-bot) · **Author:** [@trum3it](https://github.com/trum3it) · **Telegram:** [@antsaslyku](https://t.me/antsaslyku)
+An open-source **TypeScript** Polymarket trading bot and Polymarket arbitrage bot for high-performance automated trading on Polymarket crypto **5-minute** Up/Down markets — **BTC, ETH, SOL, and XRP**.
 
-A TypeScript bot for **Polymarket 5-minute crypto Up/Down** markets — **BTC, ETH, SOL, and XRP**. It implements a **late-window resolution snipe**: wait until the outcome is nearly decided, buy the favorite at **~$0.98–$0.99**, then hold to resolution for a small payout on each winning cycle.
+It implements a **late-window resolution snipe (endcycle sniper)**: wait until the outcome is nearly decided, buy the favorite at **~$0.98–$0.99**, then hold to resolution for a small payout on each winning cycle.
 
 ![Polymarket Arbitrage Bot Banner](doc/banner.png)
 
 **Live profile using this strategy:** [**@antsaslyku on Polymarket**](https://polymarket.com/@antsaslyku)
 
-This repository reads live Polymarket prices and **simulates** the same entry/exit logic (console + `logs.txt`). Press **Ctrl+C** to stop and see balance, P/L, and trade count.
+**Repository:** [github.com/trum3it/polymarket-arbitrage-bot](https://github.com/trum3it/polymarket-arbitrage-bot) · **Author:** [@trum3it](https://github.com/trum3it)
 
 ---
 
-## Live proof — buy → redeem cycles
+## Features
+
+- Built for Polymarket’s high-volume **5-minute crypto Up/Down** markets (BTC, ETH, SOL, XRP)
+- **Endcycle / late-window sniper** — enter only when the favorite is priced near resolution
+- Real-time price monitoring across **four assets** on the same 5-minute clock
+- Configurable entry band, timing window, position size, and fee assumptions
+- Live Polymarket wallet balance awareness (EOA or proxy/funder wallets)
+- Simulation mode with console output + persistent `logs.txt` trade history
+- Clear buy → redeem cycle aligned with on-chain CTF Exchange + resolution settlement
+- Tunable constants in code for research, backtesting-style runs, and strategy iteration
+- Foundation for expanding into additional sniper, arbitrage, and market-making strategies
+
+---
+
+## Included Trading Bot
+
+Designed for ultra-short-term Polymarket markets (including 5-minute rounds), this repository focuses on a proven **endcycle sniper** framework — a robust foundation for building and scaling automated trading strategies on Polymarket.
+
+| Bot | Market | Edge |
+|-----|--------|------|
+| **Endcycle Sniper** | BTC / ETH / SOL / XRP 5m Up/Down | Buy favorite @ **0.97–0.99** in the last ~40s → redeem @ **$1.00** |
+
+---
+
+## Contact
+
+I have hands-on experience developing and running automated trading bots for Polymarket, including live endcycle sniper strategies on short-interval crypto markets. I can share insights, strategies, and best practices from practical development and live trading — or discuss customized solutions tailored to your needs.
+
+If you're interested in collaboration, have questions, or want to see the bot in action, feel free to reach out.
+
+| Channel | Link |
+|---------|------|
+| **Telegram** | [@antsaslyku](https://t.me/antsaslyku) |
+| **GitHub** | [@trum3it](https://github.com/trum3it) |
+| **Polymarket** | [@antsaslyku](https://polymarket.com/@antsaslyku) |
+
+This is my public Polymarket account — you can check the bot’s P/L live:
+
+**https://polymarket.com/@antsaslyku**
+
+---
+
+## Live Proof — Buy → Redeem Cycles
 
 These are real on-chain transactions from [@antsaslyku](https://polymarket.com/@antsaslyku) on Polygon. Each pair shows the same pattern the bot follows: **buy the favorite late in the window → redeem at $1.00 after resolution**.
 
@@ -36,7 +78,7 @@ These are real on-chain transactions from [@antsaslyku](https://polymarket.com/@
 
 > **How to read these txs:** The **buy** tx interacts with `Polymarket: CTF Exchange V2` — USDC out, outcome shares in. The **redeem** tx settles winning shares back to USDC at **$1.00** per share when the 5m window resolves. Repeat this across many windows and P/L compounds — see the full history on [polymarket.com/@antsaslyku](https://polymarket.com/@antsaslyku).
 
-### Profile screenshots ([@antsaslyku](https://polymarket.com/@antsaslyku))
+### Profile Screenshots ([@antsaslyku](https://polymarket.com/@antsaslyku))
 
 Live Polymarket dashboard — portfolio growth and buy/redeem activity on **BTC** and **XRP** 5m markets at **96–99¢**:
 
@@ -51,7 +93,13 @@ Trade history includes repeated entries in late-stage crypto prediction markets 
 
 ---
 
-## How it works
+## 1. Polymarket Endcycle Sniper Bot (Introduction)
+
+**Polymarket Endcycle Sniper Bot** is an automated trading system designed to monitor short-duration prediction markets and execute high-probability trades near the end of each 5-minute epoch.
+
+It connects to Polymarket market data in real time, waits through most of the window, triggers buys when the favorite ask enters a configured threshold band (e.g. **0.97–0.99**), manages risk with timed exits, and settles winning positions after market resolution.
+
+### Strategy Overview
 
 Each **5-minute Up/Down** market (BTC, ETH, SOL, XRP) runs for **300 seconds**. All four assets share the same window clock — every 5 minutes a new round opens for each.
 
@@ -74,9 +122,7 @@ Near the end, when price has usually already moved one way, the likely winner tr
 | **Math** | Buy @ ~$0.98 → redeem @ **$1.00** ≈ **2%** gross per share | Last-second reversal → most of stake lost |
 | **Edge** | Small, repeatable gain per window | One bad flip wipes many wins |
 
----
-
-## Strategy rules
+### Strategy Rules
 
 | Setting | Value |
 |---------|--------|
@@ -95,13 +141,13 @@ Many windows produce **no trade** — normal when no side reaches the price band
 
 ## Requirements
 
-- **Node.js** ≥ 20.6 ([`package.json`](package.json))
+- **Node.js** ≥ 20.6
 - Polymarket wallet with **USDC** on Polygon
 - Internet access (Polymarket Gamma + CLOB APIs)
 
 ---
 
-## Quick start
+## Quick Start
 
 ### 1. Install
 
@@ -147,9 +193,11 @@ Optional build:
 npm run build
 ```
 
+This repository reads live Polymarket prices and **simulates** the same entry/exit logic (console + `logs.txt`). Press **Ctrl+C** to stop and see balance, P/L, and trade count.
+
 ---
 
-## Reading the logs
+## Reading the Logs
 
 | Message | Meaning |
 |---------|---------|
@@ -166,7 +214,7 @@ History is appended to **`logs.txt`**.
 
 ---
 
-## Example simulation runs
+## Example Simulation Runs
 
 Simulated terminal runs (market conditions vary):
 
@@ -180,9 +228,9 @@ These differ from the live [@antsaslyku](https://polymarket.com/@antsaslyku) res
 
 ---
 
-## Tuning in code
+## Tuning in Code
 
-Constants in [`src/index.ts`](src/index.ts):
+Constants in `src/index.ts`:
 
 | Constant | Default | Purpose |
 |----------|---------|---------|
@@ -195,7 +243,20 @@ Constants in [`src/index.ts`](src/index.ts):
 
 ---
 
-## Risks & disclaimer
+## Why This Repository
+
+This repository is designed as a practical open-source resource for:
+
+- Polymarket trading bots
+- Prediction market automation
+- Crypto 5-minute Up/Down strategies
+- Late-window / endcycle sniper systems
+- Quantitative trading research on Polymarket
+- Algorithmic TypeScript trading frameworks
+
+---
+
+## Risks & Disclaimer
 
 - **Small edge, large tail risk** — ~$0.02/share at $0.98 entry; one reversal can erase many wins.
 - **Not every window trades** — many cycles never hit 0.97–0.99 in time.
@@ -204,19 +265,44 @@ Constants in [`src/index.ts`](src/index.ts):
 
 ---
 
-## Project layout
+## Project Layout
 
 ```
 Polymarket-arbitrage-bot/
-├── doc/              # Screenshots (Polymarket profile P/L)
-│   ├── daily_pnl.png
-│   └── total_pnl.png
+├── doc/              # Screenshots & banner (Polymarket profile P/L)
+│   ├── banner.png
+│   ├── activity.png
+│   └── daily_pnl.png
 ├── src/index.ts      # Bot logic and strategy constants
 ├── .env.example      # Environment template
 ├── logs.txt          # Runtime logs (created on start)
 ├── package.json
 └── tsconfig.json
 ```
+
+---
+
+## Roadmap
+
+- Stronger profitable strategy variants (multi-threshold, adaptive sizing)
+- Live CLOB order placement mode (beyond simulation)
+- Telegram trading alerts
+- Multi-market arbitrage engine
+- Additional sniper / ladder / momentum strategy modules
+- Cloud deployment automation
+- Real-time analytics dashboard
+
+---
+
+## Contributing
+
+Contributions, pull requests, and strategy ideas are welcome.
+
+---
+
+## SEO Keywords
+
+Polymarket trading bot, Polymarket arbitrage bot, Polymarket endcycle sniper, prediction market bot, crypto arbitrage bot, automated trading system, algorithmic trading TypeScript, Polymarket API, 5-minute crypto Up/Down bot, market-making bot, Polymarket trading strategy, automated trading system architecture
 
 ---
 
