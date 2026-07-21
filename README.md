@@ -98,11 +98,6 @@ Live Polymarket dashboard — portfolio growth and buy/redeem activity on **BTC*
 
 ![Polymarket profile — past day profit/loss and recent trades](doc/daily_pnl.png)
 
-- Past year P/L: **+$82,537.48**
-- Past day P/L: **+$208.04**
-- 24h Return: **+3.51%**
-- Portfolio Value: **~$3,467**
-
 Trade history includes repeated entries in late-stage crypto prediction markets followed by successful redemptions at settlement.
 
 ---
