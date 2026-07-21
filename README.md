@@ -1,5 +1,7 @@
 # Polymarket Trading Bot | Polymarket Arbitrage Bot
 
+**Language / 语言 / Язык:** English | [中文](README.zh-CN.md) | [Русский](README.ru.md)
+
 A high-performance **Polymarket trading bot** and **Polymarket arbitrage bot** for automated trading on Polymarket crypto **5-minute** Up/Down markets — **BTC, ETH, SOL, and XRP**.
 
 It runs a **late-window resolution snipe (endcycle sniper)**: wait until the outcome is nearly decided, buy the favorite at **~$0.98–$0.99**, then hold to resolution for a small payout on each winning cycle.
