@@ -11,7 +11,7 @@ I build, deploy, and support Polymarket bots that scan and trade **politics, wea
 
 **Live profile:** [**@moond on Polymarket**](https://polymarket.com/@moond)
 
-**Telegram:** [@trum3it](https://t.me/trum3it) · **Author:** [@trum3it](https://github.com/trum3it)
+**Telegram:** [@cryptomoonday23](https://t.me/cryptomoonday23) · **Discord:** cryptomoonday · **Author:** [@trum3it](https://github.com/trum3it)
 
 ---
 
@@ -47,7 +47,7 @@ All major Polymarket categories are available for bot tooling and custom service
 <!-- IMAGE PLACEHOLDER: “Services” diagram — left: You / Your capital; center: Bot stack (Scan → Filter → Size → Execute → Redeem); right: Market categories. Suggested file: doc/services-pipeline.png -->
 <!-- ![Services pipeline](doc/services-pipeline.png) -->
 
-If you want a bot for **one category** or a **portfolio across all Polymarket verticals**, reach out on Telegram: [@trum3it](https://t.me/trum3it).
+If you want a bot for **one category** or a **portfolio across all Polymarket verticals**, reach out on Telegram: [@cryptomoonday23](https://t.me/cryptomoonday23) or Discord: **cryptomoonday**.
 
 ---
 
@@ -92,7 +92,8 @@ I provide **Polymarket arbitrage bot tools and services** across many market typ
 
 | Channel | Link |
 |---------|------|
-| **Telegram** | [@trum3it](https://t.me/trum3it) |
+| **Telegram** | [@cryptomoonday23](https://t.me/cryptomoonday23) |
+| **Discord** | cryptomoonday |
 | **GitHub** | [@trum3it](https://github.com/trum3it) |
 | **Polymarket** | [@moond](https://polymarket.com/@moond) |
 
@@ -100,7 +101,7 @@ Public live account:
 
 **https://polymarket.com/@moond**
 
-<!-- IMAGE PLACEHOLDER: Contact / CTA card — Telegram handle @trum3it + Polymarket @moond QR or profile avatar collage. Suggested file: doc/contact-cta.png -->
+<!-- IMAGE PLACEHOLDER: Contact / CTA card — Telegram @cryptomoonday23 + Discord cryptomoonday + Polymarket @moond. Suggested file: doc/contact-cta.png -->
 <!-- ![Contact CTA](doc/contact-cta.png) -->
 
 ---
@@ -342,9 +343,9 @@ This project exists to help traders and operators get real **Polymarket arbitrag
 - Here my profile: [@moond](https://polymarket.com/@moond)
 - Custom builds, scanners, execution engines, and ongoing tuning
 
-Telegram: [@trum3it](https://t.me/trum3it)
+Telegram: [@cryptomoonday23](https://t.me/cryptomoonday23) · Discord: **cryptomoonday**
 
-<!-- IMAGE PLACEHOLDER: Closing CTA banner — “Polymarket Arbitrage Across Every Event Category” with Telegram @trum3it. Suggested file: doc/closing-cta.png -->
+<!-- IMAGE PLACEHOLDER: Closing CTA banner — “Polymarket Arbitrage Across Every Event Category” with Telegram @cryptomoonday23 + Discord cryptomoonday. Suggested file: doc/closing-cta.png -->
 <!-- ![Closing CTA](doc/closing-cta.png) -->
 
 ---

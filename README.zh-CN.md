@@ -11,7 +11,7 @@
 
 **实盘主页：** [**@moond on Polymarket**](https://polymarket.com/@moond)
 
-**Telegram：** [@trum3it](https://t.me/trum3it) · **作者：** [@trum3it](https://github.com/trum3it)
+**Telegram：** [@cryptomoonday23](https://t.me/cryptomoonday23) · **Discord：** cryptomoonday · **作者：** [@trum3it](https://github.com/trum3it)
 
 ---
 
@@ -47,7 +47,7 @@
 <!-- IMAGE PLACEHOLDER: 服务流程：你的资金 → Scan/Filter/Size/Execute/Redeem → 各品类市场。建议文件: doc/services-pipeline.png -->
 <!-- ![服务流程](doc/services-pipeline.png) -->
 
-无论你要 **单一品类** 机器人，还是 **跨全站垂直领域** 的组合栈，欢迎 Telegram 联系：[@trum3it](https://t.me/trum3it)。
+无论你要 **单一品类** 机器人，还是 **跨全站垂直领域** 的组合栈，欢迎 Telegram 联系：[@cryptomoonday23](https://t.me/cryptomoonday23)，或 Discord：**cryptomoonday**。
 
 ---
 
@@ -90,7 +90,8 @@
 
 | 渠道 | 链接 |
 |------|------|
-| **Telegram** | [@trum3it](https://t.me/trum3it) |
+| **Telegram** | [@cryptomoonday23](https://t.me/cryptomoonday23) |
+| **Discord** | cryptomoonday |
 | **GitHub** | [@trum3it](https://github.com/trum3it) |
 | **Polymarket** | [@moond](https://polymarket.com/@moond) |
 
@@ -98,7 +99,7 @@
 
 **https://polymarket.com/@moond**
 
-<!-- IMAGE PLACEHOLDER: 联系 CTA — Telegram @trum3it + Polymarket @moond。建议文件: doc/contact-cta.png -->
+<!-- IMAGE PLACEHOLDER: 联系 CTA — Telegram @cryptomoonday23 + Discord cryptomoonday + Polymarket @moond。建议文件: doc/contact-cta.png -->
 <!-- ![联系 CTA](doc/contact-cta.png) -->
 
 ---
@@ -307,9 +308,9 @@ Polymarket 已不只是「加密 Up/Down」。成交与低效出现在：
 - 实盘主页：[@moond](https://polymarket.com/@moond)
 - 定制构建、扫描器、执行引擎与持续调优
 
-Telegram：[@trum3it](https://t.me/trum3it)
+Telegram：[@cryptomoonday23](https://t.me/cryptomoonday23) · Discord：**cryptomoonday**
 
-<!-- IMAGE PLACEHOLDER: 收尾 CTA — “跨所有事件品类的 Polymarket 套利” + @trum3it。建议文件: doc/closing-cta.png -->
+<!-- IMAGE PLACEHOLDER: 收尾 CTA — “跨所有事件品类的 Polymarket 套利” + Telegram @cryptomoonday23 + Discord cryptomoonday。建议文件: doc/closing-cta.png -->
 <!-- ![收尾 CTA](doc/closing-cta.png) -->
 
 ---

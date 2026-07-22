@@ -11,7 +11,7 @@
 
 **Живой профиль:** [**@moond on Polymarket**](https://polymarket.com/@moond)
 
-**Telegram:** [@trum3it](https://t.me/trum3it) · **Автор:** [@trum3it](https://github.com/trum3it)
+**Telegram:** [@cryptomoonday23](https://t.me/cryptomoonday23) · **Discord:** cryptomoonday · **Автор:** [@trum3it](https://github.com/trum3it)
 
 ---
 
@@ -47,7 +47,7 @@
 <!-- IMAGE PLACEHOLDER: Схема сервиса: капитал → Scan/Filter/Size/Execute/Redeem → категории. Файл: doc/services-pipeline.png -->
 <!-- ![Пайплайн сервисов](doc/services-pipeline.png) -->
 
-Нужен бот для **одной категории** или портфель **по всем вертикалям Polymarket** — пишите в Telegram: [@trum3it](https://t.me/trum3it).
+Нужен бот для **одной категории** или портфель **по всем вертикалям Polymarket** — пишите в Telegram: [@cryptomoonday23](https://t.me/cryptomoonday23) или Discord: **cryptomoonday**.
 
 ---
 
@@ -90,7 +90,8 @@
 
 | Канал | Ссылка |
 |-------|--------|
-| **Telegram** | [@trum3it](https://t.me/trum3it) |
+| **Telegram** | [@cryptomoonday23](https://t.me/cryptomoonday23) |
+| **Discord** | cryptomoonday |
 | **GitHub** | [@trum3it](https://github.com/trum3it) |
 | **Polymarket** | [@moond](https://polymarket.com/@moond) |
 
@@ -98,7 +99,7 @@
 
 **https://polymarket.com/@moond**
 
-<!-- IMAGE PLACEHOLDER: CTA карточка контакта — @trum3it + @moond. Файл: doc/contact-cta.png -->
+<!-- IMAGE PLACEHOLDER: CTA карточка контакта — Telegram @cryptomoonday23 + Discord cryptomoonday + Polymarket @moond. Файл: doc/contact-cta.png -->
 <!-- ![Contact CTA](doc/contact-cta.png) -->
 
 ---
@@ -307,7 +308,7 @@ Polymarket — это уже не «только crypto Up/Down». Объём и
 - Live-профиль: [@moond](https://polymarket.com/@moond)
 - Кастомные сборки, сканеры, execution engines и тюнинг
 
-Telegram: [@trum3it](https://t.me/trum3it)
+Telegram: [@cryptomoonday23](https://t.me/cryptomoonday23) · Discord: **cryptomoonday**
 
 <!-- IMAGE PLACEHOLDER: Финальный CTA-баннер. Файл: doc/closing-cta.png -->
 <!-- ![Closing CTA](doc/closing-cta.png) -->
