@@ -210,35 +210,16 @@ The same settlement pattern across **crypto, geopolitics, and sports**: **buy ou
 
 > **Pattern:** Each pair shows **entry into outcome shares** and **redeem after resolution** (typically back to USDC at **$1.00** per winning share via CTF settlement). Categories differ; the loop stays the same.
 
-### On-chain buy → redeem examples (Polygonscan)
-
-Additional verified Polygon transactions with the same bot settlement pattern:
-
-#### Trade 1 — Jun 11, 2026 · ~$0.99 entry
-
-| Step | Time (UTC) | Details | Polygonscan |
-|------|------------|---------|-------------|
-| **Buy** | 09:30:01 | ~**$67.32** USDC → **68 shares** @ **~$0.99** | [View buy tx](https://polygonscan.com/tx/0x6874a18bcd84c18a6e9d5cffd0a94eb0bdc148089a364370eb9120384bc4e21c) |
-| **Redeem** | 09:31:03 | Market resolves → shares redeemed for **~$1.00** each | [View redeem tx](https://polygonscan.com/tx/0x17e8fbc7ed8d995c44127da034e487733a43f18c6638cdcba9088a519b11ad63) |
-
-**Approx. gross profit:** ~**$0.68** on ~$67 stake (~**1%**) before fees, in **~62 seconds**.
-
-#### Trade 2 — Jun 11, 2026 · ~$0.99 entry
-
-| Step | Time (UTC) | Details | Polygonscan |
-|------|------------|---------|-------------|
-| **Buy** | 08:55:01 | Buy near-settlement favorite @ **~$0.98–$0.99** | [View buy tx](https://polygonscan.com/tx/0x7fa58be45dc24afbc8bd135fc6a7147fb548e2c00ad2f5b6100fa7510dd58b45) |
-| **Redeem** | 08:55:30 | Resolution redeem **~29s** after buy | [View redeem tx](https://polygonscan.com/tx/0x4edaaa3a6a6d854fe6ec938280ab3cfd34d07f34fcc75c7f4757feccfc9d30dc) |
 
 ### Profile & activity screenshots
 
 ![Polymarket profile — past day profit/loss and recent trades](doc/daily-pnl.png)
 
 <!-- IMAGE PLACEHOLDER: Positions list showing mixed categories (e.g. politics + sports + weather). Suggested file: doc/positions-mixed.png -->
-<!-- ![Mixed-category positions](doc/positions-mixed.png) -->
+![Mixed-category positions](doc/positions-mixed.png)
 
 <!-- IMAGE PLACEHOLDER: Trade history table screenshot with several resolved event markets. Suggested file: doc/trade-history.png -->
-<!-- ![Trade history across events](doc/trade-history.png) -->
+![Trade history across events](doc/trade-history.png)
 
 ### Capital flow, merge & rewards gallery
 
